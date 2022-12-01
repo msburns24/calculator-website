@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1#page-title {
+    font-family: Roboto;
+    margin-top: 0;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    background-color: slategray;
+    height: 750px;
+    width: 500px;
+    border: 1px solid #666;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 5px black;
+        box-shadow: 0 0 5px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    background-color: white;
+    height: 105px;
+    width: 380px;
+    margin: 50px 50px 0 50px;
+    padding: 10px;
+    text-align: right;
+}
+
+.screen-equation {
+    height: 35px;
+    font-size: 24px;
+}
+
+.screen-input {
+    height: 70px;
+    font-size: 48px;
+}
+
+.button-container {
+    height: 500px;
+    width: 400px;
+    margin: 25px 50px 0 50px;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    display: block;
+    margin: 0;
+    height: 90px;
+    width: 90px;
+    font-size: 24px;
+    border: 1px solid #666;
+    border-radius: 100px;
+}
+
+.button-container button#num0 {
+    width: 180px;
+}
+
+.button-container button:hover {
+    background-color: #cfcfcf;
+}
+
+
+/* Remove after implementing +/-, %, and . */
+.button-container button#plus-minus,
+.button-container button#percent,
+.button-container button#dot {
+    background-color: slategray;
+    border: none;
+    color: slategrey;
+}
